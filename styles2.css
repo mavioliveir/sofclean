@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 56px; /* Espaço para a navbar fixa */
+}
+
+header .navbar-brand img.logo {
+    max-width: 120px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.hero-section::after {
+    content: icon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Features Section */
+.features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.features-section .feature {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.features-section .feature:hover {
+    transform: translateY(-10px);
+}
+
+.features-section .feature i {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials-section .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.testimonials-section .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Pricing Section */
+.pricing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.pricing-section .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-section .card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+.pricing-section .card-body {
+    padding: 20px;
+}
+
+.pricing-section .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.contact-section .form-group label {
+    font-weight: bold;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    color: #ffc107;
+}
+
+footer .social-icons a {
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .features-section .feature {
+        margin-bottom: 30px;
+    }
+
+    .pricing-section .card {
+        margin-bottom: 30px;
+    }
+}
